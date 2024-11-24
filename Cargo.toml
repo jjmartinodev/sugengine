@@ -1,0 +1,9 @@
+[package]
+name = "sugengine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ahash = "0.8.11"
+miniquad = "0.4.7"
+mlua = "0.10.1"
