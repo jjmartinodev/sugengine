@@ -1,47 +1,33 @@
+shouldnt complicate myself that much
 
-scripts are code written in lua and they have a global and a local scope
+game
+    resources
+    systems
+    active scene
 
-game logic -> lua <- rust maybe later
-Memory System -> ECS | godot-system | OOP |
-rendering -> miniquad <- wgpu | bevy renderer | etc.. maybe later
+scene
+    entities
+        components
 
--- Game Logic
+systems
+    query
+        resources
+        components
 
-game logic has to be something simple without a lot of emphasis on performance as
-bottlenecks mostly happen within the engine use or engine itself.
+graphics:
+miniquad
 
-- Programming Languages
+ecs:
+bevy_ecs
 
-Lua <--
-lua is an option that gives decent performance, it's very embedable, has tables
-which seem very interesting and useful for Memory Systems
+controller_input:
+gil_rs
 
+physics:
+rapier
 
-Rust
-using rust can just include the engine as a library and
-all the borrowchecker, types systems and more can be used instead of the loose typing
-in lua or other dynamic languages. this is a disadvantage too because the engine looses
-ease of use and iteration, but gains the option of most optimal memory managment and faster cycles.
+vector math:
+glam
 
-Another downside to rust is the Memory System having to accomodate for rust's complex types,
-when a loosly typed language can be much easier to deal with.
-
--- Memory System
-
-the memory system does need to be more complex as it uses a resource that is scarcer than
-cpu performance, heap memory. Also a bad memory system can slow down things as reusability
-of types, and can halt multithreading. recombination is also a factor that memory systems
-
-ECS -> if done with rust it'll become a nightmare for a skillissued programer like me, if
-done with something like lua then things could go pretty easy and straight foward.
-
-OOP -> inheritance does not work
-
-godot like -> the idea on this would be to make a system of nodes that go in a scene, each
-node can have children nodes recursively, but querying specific
-
--- Project Structure
-
-folders
-    -> scripts
-    -> resources
+scripting:
+lua
