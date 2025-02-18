@@ -1,7 +1,0 @@
-[package]
-name = "sugengine"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-bevy_ecs = "0.15.2"

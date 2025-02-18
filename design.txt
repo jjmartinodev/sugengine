@@ -14,20 +14,4 @@ systems
         resources
         components
 
-graphics:
-miniquad
-
-ecs:
-bevy_ecs
-
-controller_input:
-gil_rs
-
-physics:
-rapier
-
-vector math:
-glam
-
-scripting:
-lua
+omg im getting so mad at rust lets try zig
